@@ -11,8 +11,92 @@
   <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-  
 
+  <div>
+
+    <header>
+      <img src="./assets/logo.png" alt="logo">
+      <h1>quicklist</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <img src="./assets/icons/arrow-left.svg" alt="seta para esquerda" style="width: 1%;">
+        <span> voltar</span>
+        <h2>Compras da semana</h2>
+
+        <form action="post">
+          <div>
+            <input type="text"
+                   name="newItem"
+                   id="newItem"
+                   aria-label="Adicione um novo item"
+                   placeholder="Adicione um novo item"
+                   />
+            <button type="submit">Adicionar item</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <ul>
+          <li>
+            <input type="checkbox"
+                   name="sucessCheck"
+                   class="sucessCheck"
+                   aria-label="Marcar item como concluido"
+                   />
+            <span>Pão de forma</span>
+            <button><img src="./assets/icons/trash.svg" alt="Icone de exclusao"></button>
+          </li>
+          <li>
+            <input type="checkbox"
+                   name="sucessCheck"
+                   class="sucessCheck"
+                   aria-label="Marcar item como concluido"
+                   />
+            <span>Café preto</span>
+            <button><img src="./assets/icons/trash.svg" alt="Icone de exclusao"></button>
+          </li>
+          <li>
+            <input type="checkbox"
+                   name="sucessCheck"
+                   class="sucessCheck"
+                   aria-label="Marcar item como concluido"
+                   />
+            <span>Suco de laranja</span>
+            <button><img src="./assets/icons/trash.svg" alt="Icone de exclusao"></button>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <ul>
+          <li>
+            <input type="checkbox"
+                   name="sucessCheck"
+                   class="sucessCheck"
+                   aria-label="Marcar item como concluido"
+                   />
+            <span>Pão de forma</span>
+            <button><img src="./assets/icons/trash.svg" alt="Icone de exclusao"></button>
+          </li>
+          <li>
+            <input type="checkbox"
+                   name="sucessCheck"
+                   class="sucessCheck"
+                   aria-label="Marcar item como concluido"
+                   />
+            <span>Café preto</span>
+            <button><img src="./assets/icons/trash.svg" alt="Icone de exclusao"></button>
+          </li>
+        </ul>
+      </section>
+      
+    </main>
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
