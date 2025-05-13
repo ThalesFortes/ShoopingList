@@ -22,12 +22,21 @@
 
   --font-family:"Inter", sans-serif;
   --text-xl: 800 1.5rem/2rem var(--font-family);
-  --text-lg: 600 1rem/1.25rem var(--font-family);
+  --text-lg: 800 1.25rem/1.25rem var(--font-family);
   --text-base: 400 1rem/1.25rem var(--font-family);
   --text-sm: 400 0.8rem/1rem var(--font-family);
 
 }
 
+html{
+  font-family: var(--font-family);
+}
+
+#content{
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
 
 a {
   text-decoration: none;
@@ -35,5 +44,20 @@ a {
 
 img {
   max-width: 100%;
- 
+}
+
+h1{
+  font: var(--text-xl);
+}
+
+h2{
+ font: var(--text-lg);
+}
+
+p{
+  font: var(--text-base);
+}
+
+span{
+  font: var(--text-sm);
 }
