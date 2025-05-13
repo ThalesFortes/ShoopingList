@@ -35,7 +35,7 @@ html{
 #content{
   max-width: 40rem;
   margin-inline: auto;
-  text-align: center;
+  /* text-align: center;*/
 }
 
 #content main section{
