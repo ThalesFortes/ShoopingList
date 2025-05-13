@@ -1,0 +1,15 @@
+.py {
+  padding-block: 2.5rem;
+}
+
+.py {
+  padding:0.7 1.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
