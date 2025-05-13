@@ -1,0 +1,7 @@
+#forms form div {
+  flex: 1;
+}
+
+#forms input[type="text"]{
+  width: 80%;
+}

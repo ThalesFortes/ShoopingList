@@ -21,12 +21,13 @@
 
     <main>
 
-      <section>
-        <img src="./assets/icons/arrow-left.svg" alt="seta para esquerda">
-        <span> voltar</span>
-        <h2>Compras da semana</h2>
-
-        <form action="post">
+      <section id="forms" class="py">
+        <div class="inputHeader">
+          <img src="./assets/icons/arrow-left.svg" alt="seta para esquerda">
+          <span> voltar</span>
+          <h2>Compras da semana</h2>
+        </div>
+        <form action="post" class="flex">
           <div>
             <input type="text"
                    name="newItem"
@@ -39,7 +40,7 @@
         </form>
       </section>
 
-      <section>
+      <section id="shoopingToDo">
         <ul>
           <li>
             <input type="checkbox"
@@ -71,7 +72,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="purchasesMade">
         <ul>
           <li>
             <input type="checkbox"
