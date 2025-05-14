@@ -1,3 +1,14 @@
+#forms .rowback{
+  filter: brightness(0) saturate(100%) invert(23%) sepia(77%) saturate(600%) hue-rotate(294deg);
+  text-transform: capitalize;
+  
+}
+
+#forms span {
+  font-size: 1rem;
+  font-weight: 800 ;
+}
+
 #forms form div {
   flex: 1;
 }
