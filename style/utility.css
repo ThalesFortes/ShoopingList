@@ -14,9 +14,16 @@
   flex: 1;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
+.y-center{
+  justify-content: center;
+}
+
 .center{
   align-items: center;
-  justify-content: center;
 }
 
 .gap-1 {

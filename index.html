@@ -14,19 +14,21 @@
 
   <div id="content">
 
-    <header class="flex gap-1 center ">
+    <header class="flex gap-1 center y-center ">
       <img src="./assets/logo.png" alt="logo">
       <h1>quicklist</h1>
     </header>
 
     <main>
 
-      <section id="forms" class="py">
-        <div class="inputHeader">
+      <section id="forms" class="py flex flex-column gap-1">
+        <div class="flex center">
           <img src="./assets/icons/arrow-left.svg" alt="seta para esquerda">
           <span> voltar</span>
-          <h2>Compras da semana</h2>
         </div>
+        <div>
+          <h2>Compras da semana</h2>
+        </div>  
         <form action="post" class="flex">
           <div>
             <input type="text"
@@ -41,7 +43,7 @@
       </section>
 
       <section id="shoopingToDo">
-        <ul>
+        <ul role="list">
           <li>
             <input type="checkbox"
                    name="sucessCheck"
@@ -73,7 +75,7 @@
       </section>
 
       <section id="purchasesMade">
-        <ul>
+        <ul role="list">
           <li>
             <input type="checkbox"
                    name="sucessCheck"
