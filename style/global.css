@@ -21,10 +21,10 @@
   --border-hover:#B9C2D0;
 
   --font-family:"Inter", sans-serif;
-  --text-xl: 800 1.5rem/2rem var(--font-family);
-  --text-lg: 800 1.25rem/1.25rem var(--font-family);
-  --text-base: 400 1rem/1.25rem var(--font-family);
-  --text-sm: 400 0.8rem/1rem var(--font-family);
+  --text-xl: 800 1.7rem/2rem var(--font-family);
+  --text-lg: 800 1.5rem/1.25rem var(--font-family);
+  --text-base: 400 1.2rem/1.25rem var(--font-family);
+  --text-sm: 400 1rem/1rem var(--font-family);
 
 }
 

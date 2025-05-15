@@ -1,18 +1,44 @@
 #forms .rowback{
   filter: brightness(0) saturate(100%) invert(23%) sepia(77%) saturate(600%) hue-rotate(294deg);
   text-transform: capitalize;
-  
 }
 
 #forms span {
-  font-size: 1rem;
   font-weight: 800 ;
+}
+
+#forms form {
+  margin-top: 2.5rem;
 }
 
 #forms form div {
   flex: 1;
 }
 
-#forms input[type="text"]{
-  width: 80%;
+#forms form input{
+  border: 1px solid var(--border-primary) ;
+  border-radius: 16px;
+  background-color: var(--background-primary);
+  padding: 1.05rem;
 }
+
+#forms form input[type="text"]{
+  width: 70%;
+}
+
+#forms input::placeholder{
+  font: var(--text-sm);
+  font-weight: 600;
+  color: #9CA3AF;
+}
+
+#forms form button{
+  border:none;
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: var(--color-brand);
+  color: var(--always-white) ;
+  font: var(--text-sm);
+  font-weight: 600;
+}
+
