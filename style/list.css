@@ -1,9 +1,11 @@
  .list-wrapper {
+
   & .line-style {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem;
+    padding: 1rem;
+    border-radius: 12px;
     background-color: var(--always-white);
 
     & .checkbox-label {
