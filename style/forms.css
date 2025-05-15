@@ -22,9 +22,14 @@
   padding: 1.05rem;
 }
 
+#forms form input:focus{
+  border: 1px solid black ;
+}
+
 #forms form input[type="text"]{
   width: 70%;
 }
+
 
 #forms input::placeholder{
   font: var(--text-sm);

@@ -76,7 +76,7 @@ input {
   width: 100%;
   border-radius: .5rem;
   border: 2px solid transparent;
-  outline: 1px solid;
+  outline: 1px solid var(--border-primary) ;
 
   padding: .75rem 1rem;
 
