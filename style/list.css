@@ -1,0 +1,30 @@
+.list-wrapper {
+
+  & .line-style{
+    display: flex;
+    background-color: var(--always-white);
+    padding: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+
+    & input[type="checkbox"],
+    & input[type="checkbox"]:hover,
+    & input[type="checkbox"]:focus {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    
+
+    & .checkbox-style{
+      border: 2px solid;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+
+

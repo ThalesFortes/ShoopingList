@@ -18,7 +18,7 @@
 #forms form input{
   border: 1px solid var(--border-primary) ;
   border-radius: 16px;
-  background-color: var(--background-primary);
+  background-color: var(--always-white);
   padding: 1.05rem;
 }
 

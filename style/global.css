@@ -30,6 +30,7 @@
 
 html{
   font-family: var(--font-family);
+  background-color: var(--background-primary);
 }
 
 #content{
@@ -64,4 +65,20 @@ p{
 
 span{
   font: var(--text-sm);
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid;
+
+  padding: .75rem 1rem;
+
+  font: var(--text-base);
 }
