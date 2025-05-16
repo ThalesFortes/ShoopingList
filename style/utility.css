@@ -33,3 +33,7 @@
 .gap-0-5 {
   gap: 0.5rem;
 }
+
+.display-none{
+  display: none;
+}

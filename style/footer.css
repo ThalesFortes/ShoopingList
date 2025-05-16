@@ -7,7 +7,34 @@ footer{
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 4rem;
-  
+  opacity: 0;
+
+  transform:translateY(700%);
+  animation: slideUp 2.2s ease forwards, appear 2.2s ease forwards;
+
+  & div + img{
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.4);
+      transition: 300ms ease;
+    }
+  }
   
 }
 
+@keyframes slideUp{
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear{
+  100% {
+    opacity: 1;
+  }
+}
