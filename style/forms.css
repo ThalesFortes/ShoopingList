@@ -23,11 +23,11 @@
 }
 
 #forms form input:focus{
-  border: 1px solid black ;
+  border: 1px solid var(--color-brand) ;
 }
 
 #forms form input[type="text"]{
-  width: 70%;
+  width: 75%;
 }
 
 
@@ -45,5 +45,16 @@
   color: var(--always-white) ;
   font: var(--text-sm);
   font-weight: 600;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.1);
+    transition: 500ms ease;
+    background-color:var(--color-brand-hover);
+  }
+
+  &:focus{
+    outline: 1px solid var(--color-brand-hover)
+  }
 }
 

@@ -9,6 +9,7 @@
     background-color: var(--always-white);
 
     & .checkbox-label {
+      position: relative;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -16,7 +17,9 @@
       flex: 1;
 
       & input {
-        display: none;
+        all: unset;
+        position: absolute;
+        inset: 0;
       }
 
       & .checkbox-style {
@@ -26,13 +29,40 @@
         border: 2px solid var(--border-primary);
         background-color: var(--always-white);
         transition: background-color 0.2s, border 0.2s;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+
+      & input:hover + .checkbox-style {
+        border: 2px solid var(--color-brand-hover);
+      }
+
+      input:focus ~ .checkbox-style {
+        border: 2px solid var(--color-brand-hover);
       }
 
       & input:checked + .checkbox-style {
-        background-color: var(--color-brand);
-        border-color: var(--color-brand);
+        background-color: var(--color-brand-hover);
+        background-image: url(../assets/icons/check.svg);
+      }
+    }
+
+    & button{
+      border: none;
+      background-color: var(--always-white);
+      cursor:pointer;
+
+      &:hover{
+        transform: scale(1.3);
+        transition: 500ms ease;
+      }
+
+      &:focus{
+        transform: scale(1.3);
+        transition: 500ms ease;
+        outline: none;
       }
     }
   }
 }
-
