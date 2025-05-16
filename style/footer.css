@@ -1,0 +1,13 @@
+footer{
+  justify-content: space-between;
+  color: var(--always-white);
+  background-color: var(--color-danger);
+
+  width: 40rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+  
+  
+}
+
