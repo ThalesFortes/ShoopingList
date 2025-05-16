@@ -48,7 +48,7 @@
   cursor: pointer;
 
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 500ms ease;
     background-color:var(--color-brand-hover);
   }
@@ -58,3 +58,18 @@
   }
 }
 
+
+@media only screen and (max-width:48em) {
+  #forms form div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #forms form input[type="text"]{
+    width: 100%;
+  }
+
+  #forms form button{
+    width: 100%;
+  }
+}
