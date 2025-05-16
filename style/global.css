@@ -39,9 +39,6 @@ html{
   /* text-align: center;*/
 }
 
-#content main section{
-  width: 40rem;
-}
 
 a {
   text-decoration: none;
@@ -95,7 +92,6 @@ input:focus{
   }
 
   #content main section{
-    width: 20rem;
     margin-inline: auto;
   }
 }
