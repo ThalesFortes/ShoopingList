@@ -4,3 +4,7 @@ const form = document.querySelector("form");
 const list = document.querySelector("ul")
 const item = document.getElementById("newItem")
 
+
+form.addEventListener("submit", (event) =>{
+  event.preventDefault()
+})
