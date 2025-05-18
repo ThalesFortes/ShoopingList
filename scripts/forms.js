@@ -22,7 +22,7 @@ const getNewItemData = (event) => {
 const checkbox = () => {
   const li = document.createElement("li")
   const label = document.createElement("label")
-  label.setAttribute(for)
+  //label.setAttribute(for)
 }
 
 
