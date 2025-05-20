@@ -1,5 +1,3 @@
-export let itens = [];
-
 export const setItensInLocalStorage = (itens) => {
   window.localStorage.setItem("itens", JSON.stringify(itens));
 }

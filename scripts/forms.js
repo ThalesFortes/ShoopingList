@@ -1,7 +1,7 @@
 import { itens, setItensInLocalStorage, getItensFromLocalStorage } from "./storage";
 
 
-const form = document.querySelector("form");
+
 const list = document.querySelector("ul");
 const item = document.getElementById("newItem");
 
@@ -19,39 +19,11 @@ const getNewItemData = (event) => {
 }
 
 
-const getCheckboxInput = ({id , description , checked}) => {
-  const li = document.createElement("li");
-  li.className = "line-style";
-  
-
-  const label = document.createElement("label");
-  label.className = "flex gap-1 center checkbox-label";
-  label.setAttribute = ("for", `${id}-item`);
-
-  const input = document.createElement("input")
-  input.type = "checkbox";
-  input.name = "sucessCheck";
-  input.className = "sucessCheck"
-  input.setAttribute = ("arial-label", "Marcar como concluido");
-  input.id = `${id}-item`
-  input.checked = checked || false
-
-  const div = document.createElement("div")
-  div.className = "checkbox-style"
-
-  const span = document.createElement("span")
-  span.textContent = description
-
-  li.appendChild(label)
-  li.appendChild(input)
-  li.appendChild(div)
-  li.appendChild(span)
-
-  return li;
-}
 
 
-const createItem = (li) => {
+
+const createItem = (event) => {
+  event.preventDefault()
   
 }
 
@@ -59,3 +31,8 @@ const createItem = (li) => {
 form.addEventListener("submit", (event) =>{
   event.preventDefault()
 })
+
+
+window.onload = function () {
+  const form = document.querySelector("form");
+}
