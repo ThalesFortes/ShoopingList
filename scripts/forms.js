@@ -36,8 +36,23 @@ const getCheckboxInput = ({id , description , checked}) => {
   input.id = `${id}-item`
   input.checked = checked || false
 
+  const div = document.createElement("div")
+  div.className = "checkbox-style"
+
+  const span = document.createElement("span")
+  span.textContent = description
+
+  li.appendChild(label)
+  li.appendChild(input)
+  li.appendChild(div)
+  li.appendChild(span)
+
+  return li;
+}
 
 
+const createItem = (li) => {
+  
 }
 
 
