@@ -12,7 +12,7 @@ export function initialList (){
     itens.forEach((itens) =>{
       const checkbox = getCheckboxInput(itens)
       const button = removeItemButton(itens.id)
-      createItensList(button, checkbox, itens)
+      createItensList(button, checkbox, itens.id)
     })   
   };
 }
