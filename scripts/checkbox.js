@@ -1,4 +1,4 @@
-import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage";
+import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage.js";
 
 export const getCheckboxInput = ({id , description , checked}) => {
   const li = document.createElement("li");

@@ -1,9 +1,10 @@
-import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage";
+import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage.js";
 
 
 
 const list = document.querySelector("ul");
 const item = document.getElementById("newItem");
+const form = document.querySelector("form")
 
 
 
@@ -19,6 +20,6 @@ form.addEventListener("submit", (event) =>{
 })
 
 
-window.onload = function () {
-  const form = document.querySelector("form");
+export const initForm = () => {
+  console.log("hello World")
 }
