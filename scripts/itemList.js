@@ -3,13 +3,12 @@ import {removeItemButton} from "./remove.js"
 import {getNewItemData, getItensFromLocalStorage, setItensInLocalStorage} from "./storage.js"
 
 
-const createItensList = (button, checkbox) =>{
+const createItensList = (button, checkbox, id) =>{
   const list = document.querySelector("ul");
 
   const li = document.createElement("li");
   li.className = "line-style";
-  li.id = checkbox.id
-
+  li.id = id
 
   li.appendChild(checkbox)
   li.appendChild(button)
@@ -25,10 +24,10 @@ export const createItem = (event) => {
   const newItemData = getNewItemData(event)
 
   const checkbox = getCheckboxInput(newItemData)
-  const button = removeItemButton()
-  createItensList(button,checkbox)
+  const button = removeItemButton(newItemData.id)
+  
+  createItensList(button,checkbox, newItemData.id)
 
-  console.log(createItensList)
   const itens = getItensFromLocalStorage();
   const updateItens = [
     ...itens,
