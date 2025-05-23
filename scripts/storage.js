@@ -14,7 +14,7 @@ export const getNewId = () =>{
 }
 
 export const getNewItemData = (event) => {
-  const description = event.target.sucessCheck.value();
+  const description = event.target.newItem.value;
   const id = getNewId();
   return {id,description};
 }

@@ -1,10 +1,6 @@
 import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage.js";
 
 export const getCheckboxInput = ({id , description , checked}) => {
-  const li = document.createElement("li");
-  li.className = "line-style";
-  
-
   const label = document.createElement("label");
   label.className = "flex gap-1 center checkbox-label";
   label.setAttribute("for", `${id}-item`);
@@ -28,13 +24,8 @@ export const getCheckboxInput = ({id , description , checked}) => {
   label.appendChild(checkbox)
   label.appendChild(div)
   label.appendChild(span)
-
-  li.appendChild(label)
-
-  const itens = getItensFromLocalStorage();
-  const newItem = {id, description, checked};
-  setItensInLocalStorage([...itens, newItem])
-  return li;
+  
+  return label;
 }
 
 
