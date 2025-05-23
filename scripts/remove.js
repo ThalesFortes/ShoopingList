@@ -5,10 +5,12 @@ const removeItemList = (itemID) =>{
     const updateItens = itens.filter(({id}) => parseInt(id) !== parseInt(itemID)) 
     setItensInLocalStorage(updateItens)
 
-    const itemElement = document.getElementById(itemID);
+    
+    const itemElement = document.getElementById(`${itemID}-item`)?.closest('li');
     if (itemElement) {
-      document.querySelector("ul").removeChild(itemElement);
+      itemElement.remove();
     }
+ 
 }
 
 export const removeItemButton = (itemID) => {

@@ -37,3 +37,8 @@
 .display-none{
   display: none;
 }
+
+.checked{
+  text-decoration: line-through;
+  color: var(--content-tertiary);
+}

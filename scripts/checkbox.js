@@ -15,23 +15,39 @@ export const getCheckboxInput = ({id , description , checked}) => {
   checkbox.checked = checked || false
   checkbox.addEventListener('change', onChangeClick)
 
+
   const div = document.createElement("div")
   div.className = "checkbox-style"
 
   const span = document.createElement("span")
   span.textContent = description
+  if (checkbox.checked){
+    span.classList.add("checked")
+  }
 
   label.appendChild(checkbox)
   label.appendChild(div)
   label.appendChild(span)
-  
+
   return label;
 }
 
 
 export const onChangeClick = (event) => {
-  const [id] = event.target.id.split('-')
+  const checkbox = event.target
+  const label = checkbox.parentElement;
+  const span = label.querySelector("span");
+
+  const [id] = checkbox.id.split('-')
+
   const itens = getItensFromLocalStorage()
+
+  if (checkbox.checked){
+    span.classList.add("checked")
+  } else {
+    span.classList.remove("checked")
+  }
+
 
   const updateItens = itens.map((itens) => {
     return parseInt(id) === itens.id

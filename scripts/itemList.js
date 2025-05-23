@@ -3,7 +3,7 @@ import {removeItemButton} from "./remove.js"
 import {getNewItemData, getItensFromLocalStorage, setItensInLocalStorage} from "./storage.js"
 
 
-const createItensList = (button, checkbox, id) =>{
+export const createItensList = (button, checkbox, id) =>{
   const list = document.querySelector("ul");
 
   const li = document.createElement("li");
@@ -39,8 +39,6 @@ export const createItem = (event) => {
   ]
   setItensInLocalStorage(updateItens)
   document.getElementById("newItem").value = ''
-
-
 }
 
 
