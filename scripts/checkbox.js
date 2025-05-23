@@ -7,13 +7,14 @@ export const getCheckboxInput = ({id , description , checked}) => {
 
   const label = document.createElement("label");
   label.className = "flex gap-1 center checkbox-label";
-  label.setAttribute = ("for", `${id}-item`);
+  label.setAttribute("for", `${id}-item`);
+  label.setAttribute("title", `Marcar ${description} como concluido`)
 
   const checkbox = document.createElement("input")
   checkbox.type = "checkbox";
   checkbox.name = "sucessCheck";
   checkbox.className = "sucessCheck"
-  checkbox.setAttribute = ("arial-label", "Marcar como concluido");
+  checkbox.setAttribute("arial-label", "Marcar ${description}  como concluido");
   checkbox.id = `${id}-item`
   checkbox.checked = checked || false
   checkbox.addEventListener('change', onChangeClick)
@@ -24,17 +25,21 @@ export const getCheckboxInput = ({id , description , checked}) => {
   const span = document.createElement("span")
   span.textContent = description
 
-  li.appendChild(label)
-  li.appendChild(checkbox)
-  li.appendChild(div)
-  li.appendChild(span)
+  label.appendChild(checkbox)
+  label.appendChild(div)
+  label.appendChild(span)
 
+  li.appendChild(label)
+
+  const itens = getItensFromLocalStorage();
+  const newItem = {id, description, checked};
+  setItensInLocalStorage([...itens, newItem])
   return li;
 }
 
 
 export const onChangeClick = (event) => {
-  const [id] = event.target.id.splice('-')
+  const [id] = event.target.id.split('-')
   const itens = getItensFromLocalStorage()
 
   const updateItens = itens.map((itens) => {

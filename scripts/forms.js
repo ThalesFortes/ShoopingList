@@ -2,11 +2,6 @@ import { setItensInLocalStorage, getItensFromLocalStorage } from "./storage.js";
 
 
 
-const list = document.querySelector("ul");
-const item = document.getElementById("newItem");
-const form = document.querySelector("form")
-
-
 
 
 const createItem = (event) => {
