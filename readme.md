@@ -7,7 +7,7 @@
 
 <p align="center">
     <b>
-      Currency converter is a program where you enter the value in euros, dollars, or pounds. The program converts it to how much it would be in reais, showing it in a box below according to the current exchange rate. Made for the purpose of practicing JavaScript.
+      Shopping list in CRUD, where I trained in JavaScript, creating, reading, removing, updating, and saving tasks in local storage.
     </b>
 </p>
 
@@ -18,7 +18,7 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-      <img src="./img/printProjectExample.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+      <img src="./assets/image.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
 </p>
 
 <h2 id="tech">💻 Technologies</h2>

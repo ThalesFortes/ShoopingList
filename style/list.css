@@ -47,6 +47,10 @@
         background-color: var(--color-brand-hover);
         background-image: url(../assets/icons/check.svg);
       }
+
+      & span {
+        text-transform: capitalize;
+      }
     }
 
     & button{

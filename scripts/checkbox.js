@@ -20,6 +20,7 @@ export const getCheckboxInput = ({id , description , checked}) => {
   div.className = "checkbox-style"
 
   const span = document.createElement("span")
+  span.classList.add('uppercaseInitial')
   span.textContent = description
   if (checkbox.checked){
     span.classList.add("checked")
