@@ -19,7 +19,7 @@ export const removeItemButton = (itemID) => {
   button.onclick = () => removeItemList(itemID)
   
   const img = document.createElement("img")
-  img.setAttribute("src", "https://thalesfortes.github.io/ShoopingList/assets/icons/trash.svg")
+  img.setAttribute("src", "../assets/icons/trash.svg")
   img.setAttribute("alt","Botão de exclusão do item")
 
   button.appendChild(img)
