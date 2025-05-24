@@ -2,6 +2,7 @@ import {createItem, createItensList} from './itemList.js'
 import { getItensFromLocalStorage } from './storage.js';
 import { getCheckboxInput } from './checkbox.js';
 import { removeItemButton } from './remove.js';
+import { closeAlertModal } from './modalAlert.js';
 
 export function initialList (){
   window.onload = function () {
@@ -13,6 +14,7 @@ export function initialList (){
       const checkbox = getCheckboxInput(itens)
       const button = removeItemButton(itens.id)
       createItensList(button, checkbox, itens.id)
-    })   
+    })
+    closeAlertModal()   
   };
 }

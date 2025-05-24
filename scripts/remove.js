@@ -1,4 +1,5 @@
-import {getItensFromLocalStorage, getNewId, setItensInLocalStorage} from './storage.js'
+import {getItensFromLocalStorage, setItensInLocalStorage} from './storage.js'
+import {showAlert,closeAlertModal} from './modalAlert.js'
 
 const removeItemList = (itemID) =>{
     const itens = getItensFromLocalStorage()
@@ -10,7 +11,7 @@ const removeItemList = (itemID) =>{
     if (itemElement) {
       itemElement.remove();
     }
- 
+    showAlert()
 }
 
 export const removeItemButton = (itemID) => {
