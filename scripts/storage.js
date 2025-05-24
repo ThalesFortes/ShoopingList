@@ -15,6 +15,9 @@ export const getNewId = () =>{
 
 export const getNewItemData = (event) => {
   const description = event.target.newItem.value;
+  if (description === ""){
+      return alert("Por favor, Insira um item na lista")
+    }
   const id = getNewId();
   return {id,description};
 }
